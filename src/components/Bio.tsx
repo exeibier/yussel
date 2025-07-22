@@ -13,7 +13,7 @@ const BioSection = () => {
                 During my teenage years, in search of my identity; I decided to start a journey between music and skateboarding. Surrounded by chords and sounds of tires hitting the asphalt, I found in photography a way to show my interest in the world, discovering people, spaces, situations that helped me to understand my own reality. It is through the image that I find the right language to share with the world my desires, my vision of life and what surrounds me.  
               </p>
               <p>
-                What you see here is the way I see the world through my lens.Scenarios, portraits, cities, different ways of observing through light as a source of creation. Photography is understood as a drawing with light, let's draw an idea together, the most luminous that our vision can imagine.
+                What you see here is the way I see the world through my lens.Scenarios, portraits, cities, different ways of observing through light as a source of creation. Photography is understood as a drawing with light, let`&apos;`s draw an idea together, the most luminous that our vision can imagine.
               </p>
               <p>
                 I currently reside in Mexico City, the place where dreams are the means to grow.
