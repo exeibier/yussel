@@ -43,7 +43,7 @@ interface Photo {
       alt: `Documental Photography ${id}`
     };
   });
-  const musicImages = Array.from({ length: 49 }, (_, i) => {
+  const musicImages = Array.from({ length: 12 }, (_, i) => {
     const id = (i + 1).toString();
     return {
       id,
