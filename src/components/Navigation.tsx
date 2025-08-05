@@ -39,13 +39,14 @@ const Navigation = () => {
   }, []);
 
   const workCategories = [
-    { name: 'Commercial', path: '/commercial' },
-    { name: 'Music', path: '/music' },
-    { name: 'DJ', path: '/dj' },
-    { name: 'Portrait', path: '/portrait' },
-    { name: 'Skate', path: '/skate' },
-    { name: 'Tattoo', path: '/tattoo' },
-    { name: 'Documental', path: '/documental' },
+    { name: 'Commercial', path: '/portfolio/commercial' },
+    { name: 'Music', path: '/portfolio/music' },
+    { name: 'DJ', path: '/portfolio/dj' },
+    { name: 'Portrait', path: '/portfolio/portrait' },
+    { name: 'Skate', path: '/portfolio/skate' },
+    { name: 'Tattoo', path: '/portfolio/tattoo' },
+    { name: 'Documental', path: '/portfolio/documental' },
+    { name: 'Bio', path: '/bio' },
   ];
 
   return (
@@ -63,42 +64,18 @@ const Navigation = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="flex items-center text-gray-700 hover:text-black transition-colors duration-300 font-medium">
-                Work
-                <ChevronDown size={16} className="ml-1" />
-              </button>
-              
-              {/* Desktop Submenu */}
-              <div 
-                className={`absolute top-full left-0 mt-1 w-48 bg-white border border-gray-100 shadow-lg rounded-md transition-all duration-200 ${
-                  isWorkSubmenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-                }`}
-              >
-                <Link 
-                  href="/" 
-                  onClick={() => scrollToSection('work')}
-                  className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-300"
-                >
-                  All Work
-                </Link>
+              <div className="hidden md:flex space-x-6">
                 {workCategories.map((category) => (
                   <Link
                     key={category.name}
                     href={category.path}
-                    className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-300"
+                    className="text-gray-700 hover:text-black transition-colors duration-300 font-medium"
                   >
                     {category.name}
                   </Link>
                 ))}
               </div>
             </div>
-            
-            <button 
-              onClick={() => scrollToSection('bio')}
-              className="text-gray-700 hover:text-black transition-colors duration-300 font-medium"
-            >
-              Bio
-            </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-black transition-colors duration-300 font-medium"

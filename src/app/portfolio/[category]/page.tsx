@@ -151,8 +151,8 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Category Not Found</h1>
-          <Link href="/" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-            ← Back to Portfolio
+          <Link href="/" className="text-black hover:text-black-700 font-semibold">
+            ← Back to home
           </Link>
         </div>
       </div>
@@ -189,16 +189,15 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
             <Link
               href="/"
-              className="inline-flex items-center text-yellow-600 hover:text-yellow-700 font-semibold mb-6 transition-colors"
+              className="inline-flex items-center text-black  font-semibold mb-6 transition-colors border-b-2 border-transparent hover:border-black transition-all duration-200"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Portfolio
+              Back to Home
             </Link>
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">{category.name}</h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl">{category.description}</p>
           </div>
         </div>
 
