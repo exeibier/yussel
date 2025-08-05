@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";

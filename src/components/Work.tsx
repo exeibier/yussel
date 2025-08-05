@@ -4,12 +4,8 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import Lightbox from "../components/Lightbox"
-import Contact from "../components/Contact"
 import Navigation from '../components/Navigation';
 import React from "react"
-interface CategoryPageProps {
-  params: Promise<{ category: string }>
-}
 
 interface Photo {
   id: string
