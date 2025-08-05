@@ -86,7 +86,7 @@ export default function OffsetPhotoGrid() {
           {categories.map((category) => (
             <Link
               key={category.id}
-              href={`/${category.id}`}
+              href={`/portfolio/${category.id}`}
               className={`${category.gridClass} ${category.hideOnMobile ? "hidden md:block" : ""} relative group cursor-pointer`}
             >
               <div
@@ -119,7 +119,7 @@ export default function OffsetPhotoGrid() {
           {categories
             .filter((cat) => cat.hideOnMobile)
             .map((category, index) => (
-              <Link key={category.id} href={`/${category.id}`} className="block group cursor-pointer">
+              <Link key={category.id} href={`/portfolio/${category.id}`} className="block group cursor-pointer">
                 <div
                   className={`relative h-48 w-full transform ${index % 2 === 0 ? "-rotate-1" : "rotate-2"} group-hover:rotate-0 transition-all duration-500`}
                 >
