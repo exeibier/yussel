@@ -34,7 +34,7 @@ interface Photo {
       alt: `dj Photography ${id}`
     };
   });
-  const documentalImages = Array.from({ length: 68 }, (_, i) => {
+  const documentalImages = Array.from({ length: 75 }, (_, i) => {
     const id = (i + 1).toString();
     return {
       id,
