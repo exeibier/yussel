@@ -25,7 +25,7 @@ interface Photo {
       alt: `commercial Photography ${id}`
     };
   });
-  const djImages = Array.from({ length: 9 }, (_, i) => {
+  const djImages = Array.from({ length: 49 }, (_, i) => {
     const id = (i + 1).toString();
     return {
       id,
