@@ -17,7 +17,7 @@ interface Photo {
   alt: string
 }
 
-  const commercialImages = Array.from({ length: 67 }, (_, i) => {
+  const commercialImages = Array.from({ length: 89 }, (_, i) => {
     const id = (i + 1).toString();
     return {
       id,
