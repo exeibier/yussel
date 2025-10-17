@@ -46,6 +46,7 @@ const Navigation = () => {
     { name: 'Skate', path: '/portfolio/skate' },
     { name: 'Tattoo', path: '/portfolio/tattoo' },
     { name: 'Documental', path: '/portfolio/documental' },
+    { name: 'Product', path: '/portfolio/product' },
     { name: 'Bio', path: '/bio' },
   ];
 

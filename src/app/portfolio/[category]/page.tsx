@@ -79,6 +79,15 @@ interface Photo {
       alt: `tattoo Photography ${id}`
     };
   });
+    const productImages = Array.from({ length: 10 }, (_, i) => {
+    const id = (i + 1).toString();
+    return {
+      id,
+      category: 'product',
+      src: `/work/product/product${String(id).padStart(3, '0')}.jpg`,
+      alt: `product Photography ${id}`
+    };
+  });
   
   
 
@@ -127,6 +136,11 @@ const categoryData: Record<
     name: "DJ",
     description: "Architectural photography highlighting design, structure, and the interplay of light and space.",
     photos: djImages,
+  },
+  product: {
+    name: "Product",
+    description: "High-quality product photography that showcases items in their best light for marketing and advertising.",
+    photos: productImages,
   },
 }
 
