@@ -61,7 +61,7 @@ interface Photo {
       alt: `portrait Photography ${id}` 
     };
   });
-  const skateImages = Array.from({ length: 10 }, (_, i) => {
+  const skateImages = Array.from({ length: 13 }, (_, i) => {
     const id = (i + 1).toString();
     return {
       id,
